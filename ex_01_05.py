@@ -41,12 +41,12 @@ for _ in range(testcase):
     exit_loca = s.find("O")
 
     if my_loca > exit_loca :
-        road = s[exit_loca+1 : my_loca-1]
+        road = s[exit_loca+1 : my_loca]
         if road.count("#") > fight :
             ans.append("HELP!")
         else : ans.append("HAHA!")
     else :
-        road = s[my_loca+1 : exit_loca-1]
+        road = s[my_loca+1 : exit_loca]
         if road.count("#") > fight :
             ans.append("HELP!")
         else : ans.append("HAHA!")         
