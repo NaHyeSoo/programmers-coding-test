@@ -6,12 +6,14 @@
 '''
 
 import math 
+import sys 
+
 testcase = int(input())
 answer = []
 
 for _ in range(testcase):
     seq_length = int(input())
-    seq = list(map(int,input().split()))
+    seq = list(map(int,sys.stdin.readline().split())) #input보다 빠르다 
     seq.reverse() #원본 배열이 바뀜
     for i in range(seq_length-1):
         while seq[i+1] > seq[i] : 
